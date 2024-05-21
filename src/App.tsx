@@ -1,9 +1,10 @@
 import './App.css'
+import Lottery from "./components/Lottery/Lottery";
 
 const App = () => {
     return (
         <>
-            <h1>Home Work-51</h1>
+            <Lottery />
         </>
     );
 };
