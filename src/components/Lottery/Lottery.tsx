@@ -16,7 +16,11 @@ const Lottery = () => {
         // eslint-disable-next-line for-direction
         for (let i = 0; i < 5; i++) {
             const newNumber:number = getNewNumber();
-            newNumbers.push(newNumber);
+            if (!newNumbers.includes(newNumber)) {
+                newNumbers.push(newNumber);
+            } else {
+                i-=1;
+            }
         }
 
         newNumbers.sort((a, b) => {
